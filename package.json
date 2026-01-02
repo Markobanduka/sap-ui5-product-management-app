@@ -1,5 +1,38 @@
 {
   "dependencies": {
     "eslint": "^9.39.2"
+  },
+  "name": "ui5.product.list",
+  "version": "0.0.1",
+  "private": true,
+  "sapuxLayer": "CUSTOMER_BASE",
+  "description": "",
+  "keywords": [
+    "ui5",
+    "openui5",
+    "sapui5"
+  ],
+  "type": "module",
+  "main": "webapp/index.html",
+  "scripts": {
+    "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#app-tile\"",
+    "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#app-tile\"",
+    "start-noflp": "fiori run --open \"index.html?sap-ui-xx-viewCache=false\"",
+    "start-variants-management": "fiori run --open \"preview.html?sap-ui-xx-viewCache=false&fiori-tools-rta-mode=true&sap-ui-rta-skip-flex-validation=true#preview-app\"",
+    "build": "ui5 build -a --clean-dest --include-task=generateCachebusterInfo",
+    "deploy": "fiori verify",
+    "deploy-config": "fiori add deploy-config"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-destructuring": "^7.28.5",
+    "@babel/plugin-transform-spread": "^7.27.1",
+    "@babel/preset-env": "^7.28.5",
+    "@sap/ux-ui5-tooling": "1",
+    "@ui5/cli": "^4.0.38",
+    "rimraf": "3.0.2",
+    "ui5-middleware-livereload": "^3.2.0",
+    "ui5-middleware-simpleproxy": "^3.6.1"
   }
 }

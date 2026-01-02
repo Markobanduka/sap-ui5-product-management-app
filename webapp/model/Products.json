@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "Name": "Bread",
+      "Category": "Food",
+      "Price": 29.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2025-08-03T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": false
+    },
+    {
+      "Name": "Milk",
+      "Category": "Beverages",
+      "Price": 1.49,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-11-15T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": false
+    },
+    {
+      "Name": "Smartphone",
+      "Category": "Electronics",
+      "Price": 699.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-09-01T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": true
+    },
+    {
+      "Name": "Cheese",
+      "Category": "Food",
+      "Price": 4.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-03-01T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": false
+    },
+    {
+      "Name": "Coffee",
+      "Category": "Beverages",
+      "Price": 7.49,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-01-15T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": true
+    },
+    {
+      "Name": "Orange Juice",
+      "Category": "Beverages",
+      "Price": 2.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-02-10T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": true
+    },
+    {
+      "Name": "Chocolate",
+      "Category": "Food",
+      "Price": 2.49,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-04-20T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": true
+    },
+    {
+      "Name": "Laptop",
+      "Category": "Electronics",
+      "Price": 1199.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-10-10T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": false
+    },
+    {
+      "Name": "Headphones",
+      "Category": "Electronics",
+      "Price": 149.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-06-20T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": false
+    },
+    {
+      "Name": "Yogurt",
+      "Category": "Food",
+      "Price": 0.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-05-05T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": true
+    },
+    {
+      "Name": "Mineral Water",
+      "Category": "Beverages",
+      "Price": 0.69,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-01-01T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": false
+    },
+    {
+      "Name": "Tablet",
+      "Category": "Electronics",
+      "Price": 399.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-07-15T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": false
+    },
+    {
+      "Name": "Cookies",
+      "Category": "Food",
+      "Price": 1.99,
+      "Currency": "EUR",
+      "ReleaseDate": "2024-06-01T00:00:00.000Z",
+      "DiscontinuedDate": null,
+      "Inactive": true
+    }
+  ]
+}
