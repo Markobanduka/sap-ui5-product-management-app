@@ -1,11 +1,9 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
 <ViewSettingsDialog confirm="onConfirmFilter">
     <filterItems>
-      <ViewSettingsFilterItem key="Category" text="{i18n>category}">
+      <ViewSettingsFilterItem key="Category/ID" items="{/Categories}" text="{i18n>category}">
     <items>
-        <ViewSettingsItem text="Food" key="Category__EQ__Food"/>
-        <ViewSettingsItem text="Beverages" key="Category__EQ__Beverages"/>
-        <ViewSettingsItem text="Electronics" key="Category__EQ__Electronics"/>
+        <ViewSettingsItem text="{Name}" key="{ID}"/>
     </items>
 </ViewSettingsFilterItem>
 

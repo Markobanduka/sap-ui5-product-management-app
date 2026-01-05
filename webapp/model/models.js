@@ -6,7 +6,8 @@ sap.ui.define(["sap/ui/model/json/JSONModel", "sap/ui/model/BindingMode"], funct
                 Category: "",
                 Price: "",
                 ReleaseDate: null,
-                DiscontinuedDate: null
+                DiscontinuedDate: null,
+                Rating: 0
         }).setDefaultBindingMode(BindingMode.TwoWay);
     },
         createValidationModel(){

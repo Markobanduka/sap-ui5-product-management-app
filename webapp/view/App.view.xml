@@ -12,18 +12,22 @@ xmlns:mvc="sap.ui.core.mvc"
                 id="idProductList"
                 items="{
                 path:'/Products',
+                parameters:{
+                    expand: 'Category'
+                },
                 groupHeaderFactory: '.formatter.formatGroupHeader'
                 }"
                 class="sapUiSmallMarginTop listWithSmallerTitle"
                 noDataText="{i18n>noDataText}"
                 mode="Delete"
                 delete="OnPressDelete"
+                updateFinished="onProductsLoaded"
                 growing="true"
-                growingThreshold="20"
+                growingThreshold="4"
             >
             <headerToolbar>
                 <Toolbar>
-                    <Title text="{i18n>listHeader}"/>
+                    <Title id="idListTitle" text="{i18n>listHeader}"/>
                         <ToolbarSpacer/>
                             <Button icon="sap-icon://filter" press="onFilterButtonPressed"/>
                             <Button icon="sap-icon://sort" press="onSortButtonPressed"/>
@@ -39,6 +43,8 @@ xmlns:mvc="sap.ui.core.mvc"
             <items>
             <ObjectListItem 
                 title="{Name}"
+                type="Active"
+                press="onItemPress"
                 number="{
                 parts: ['Price', 'Currency'],
                 type: 'sap.ui.model.type.Currency',
@@ -51,10 +57,7 @@ xmlns:mvc="sap.ui.core.mvc"
                 <attributes>
                 <ObjectAttribute 
                     title="Category" 
-                    text="{
-                    path: 'Category',
-                    formatter: '.formatter.formatCategory'
-                    }"/>
+                    text="{Category/Name}"/>
                 <ObjectAttribute
                  title="Release Date" 
                  text="{

@@ -10,14 +10,19 @@ sap.ui.define(["sap/ui/core/ValueState", "sap/m/GroupHeaderListItem"], function 
             formatAvailabilityState(sValue) {
           return sValue && new Date(sValue) <= new Date() ? ValueState.Error : ValueState.Success;
             },
-  formatCategory(sValue) {
-  return sValue || "Unknown";
-},
+
 
 formatGroupHeader(oGroup) {
-  return new GroupHeaderListItem({
-    title: oGroup.key || "Unknown"
-  });
+  switch (oGroup.key) {
+      case 0:
+      return new GroupHeaderListItem({ title: "Food"})
+      case 1:
+      return new GroupHeaderListItem({ title: "Beverages"})
+      case 2:
+      return new GroupHeaderListItem({ title: "Electronics"})
+      default:
+      return new GroupHeaderListItem({ title: "Unknown" })
+  }
 }
 
 
