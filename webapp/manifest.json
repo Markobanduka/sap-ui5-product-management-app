@@ -52,14 +52,69 @@
             "": {
                 "dataSource": "mainService",
                 "settings": {
-                    "useBatch":false,
-                    "defaultCountMode":"Request"
+                    "useBatch":true,
+                    "defaultCountMode":"Request",
+                    "defaultBindingMode": "TwoWay"
                 }
             },
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "ui5.product.list.i18n.i18n"
+                }
+            }
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "type": "View",
+                "viewType": "XML",
+                "path": "ui5.product.list.view.",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "transition": "slide",
+                "async": true,
+                "bypassed": {
+                    "target": "notFound"
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "home",
+                    "target": "targetHome"
+                },
+                {
+                    "pattern": "detail/{productID}?:query:",
+                    "name": "detail",
+                    "target": "targetDetail"
+                },
+                {
+                    "pattern": "edit",
+                    "name": "edit",
+                    "target": "targetEdit"
+                }
+            ],
+            "targets": {
+                "targetHome": {
+                    "id": "idTargetHome",
+                    "name": "Home",
+                    "level": 1
+                },
+                "targetDetail": {
+                    "id": "idTargetDetail",
+                    "name": "Detail",
+                    "level": 2
+                },
+                "targetEdit": {
+                    "id": "idTargetEdit",
+                    "name": "Edit",
+                    "transition": "show"
+                },
+                "notFound": {
+                    "id": "idNotFound",
+                    "name": "NotFound",
+                    "transition": "show"    
                 }
             }
         },

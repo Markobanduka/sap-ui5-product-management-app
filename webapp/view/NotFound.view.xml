@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="ui5.product.list.controller.NotFound"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <Page>
+        <content>
+            <MessagePage
+                title="Page not found"
+                description="The requested page does not exist." />
+                  
+                    <Button
+                        text="{i18n>goBack}"
+                        type="Emphasized"
+                        press="onNavBack" />
+          
+        </content>
+    </Page>
+
+</mvc:View>
